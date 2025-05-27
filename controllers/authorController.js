@@ -14,6 +14,7 @@ exports.createAuthor = async (req, res) => {
 
 // Get all authors
 exports.getAuthors = async (req, res) => {
+// comment 002
   try {
     const authors = await authorService.getAllAuthors();
     res.status(200).json(authors);
